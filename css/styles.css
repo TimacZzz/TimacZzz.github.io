@@ -1,0 +1,370 @@
+/* *{
+    border: 1px solid black;
+} */
+
+button:hover, #submit-btn:hover{
+    background-color: rgba(87, 182, 255, 0.4);
+    cursor: pointer;
+}
+
+nav{
+    position: fixed;
+    top: 3%;
+    left: 50%;                        
+    transform: translateX(-50%); 
+    display: flex;
+    gap: 5px;
+    border-radius: 20px;
+    border: 3px solid black;
+    width: fit-content;
+    padding: 3px;
+}
+
+.navbar-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    width: fit-content;
+    background-color: white;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 1.2rem
+}
+
+.hidden{
+    display: none;
+}
+
+.selected{
+    background-color: rgb(87, 182, 255);
+}
+
+@font-face {
+    font-family: '3dumbregular';
+    src: url('../resources/3Dumb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: rgb(167, 214, 250);
+    font-family: cursive;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#welcome-msg{
+    font-size: 12rem;
+    font-family: "3dumbregular";
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+
+#intro-container{
+    display: flex;
+    justify-content: center;    /* center horizontally */
+    gap: 2rem;
+    width: 45vw;
+    margin: 0 auto;  
+}
+
+#brief-intro{
+    width: 500px;
+}
+
+#brief-intro h2{
+    font-size: 3rem;
+    margin-top: 15%;
+}
+
+#brief-intro p{
+    font-size: 1.5rem;
+}
+
+#image-container img{
+    width: 512px;
+    height: 682px;
+    border-radius: 20px;
+}
+
+#button-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-btn{
+    all: unset;
+}
+
+.footer-btn:hover{
+    border-radius: 8px;
+}
+
+.home-page-btn, #submit-btn{
+    border-radius: 30px;
+    width: 180px;
+    background-color: white;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+#icon-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 5vw;
+}
+
+i{
+    margin: 5px;
+    font-size: 24px !important;
+}
+
+footer{
+    width: 41vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#name-image-container{
+    margin: 3.5% auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+}
+
+#name-image-container, #about-btns-container, #introduction, #work-experiences-container, .work-experience, #email-container, .title-container, .project-card{
+    width: 32vw;
+}
+
+#about-btns-container, #introduction, #work-experiences-container, .work-experience, #email-container, .title-container, .project-card{
+    margin: 5px auto;
+}
+
+#name-image-container h1, .title-container h1, .project-title-container h1{
+    font-family: "3dumbregular";
+    font-size: 6rem;
+}
+
+.title-container h1, .project-title-container h1{
+    margin: 0 auto;
+}
+
+.project-title-container h1{
+    text-align: center;
+}
+
+#name-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#id-photo-container{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#introduction p{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.about-btn, .project-btn, .project-github-btn{
+    border-radius: 20px;
+    width: fit-content;
+    background-color: white;
+}
+
+.project-btn, .project-github-btn{
+    font-family: cursive, Arial, sans-serif;
+    font-size: 1rem;
+    
+}
+
+.project-github-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.project-btn-container{
+    margin: 4.5% auto 0 auto;
+    width: 32vw;
+}
+
+.about-btn i span{
+    font-family: cursive, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.about-btn i{
+    font-size: 18px !important;
+}
+
+#about-btns-container{
+    display: flex;
+    gap: 10px;
+}
+
+#work-experiences-container h3{
+    font-family: "3dumbregular";
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.work-experience div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.work-experience-title{
+    color:rgb(0, 30, 255);
+}
+
+#name-email-container div{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+}
+
+#message-container{
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input, textarea{
+    width: 100%;
+    margin: 5px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-family: cursive;
+    border: 2px solid black;
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 99%;
+    height: 40vh;
+    transform: translateX(-0.5%);
+    margin-bottom: 0;
+}
+
+ul{
+    list-style: square;
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.title-container{
+    margin: 3.5% auto 0 auto;
+    text-align: center;
+}
+
+.project-title-container{
+    margin: 0 auto;
+    width: 32vw;
+}
+
+
+#submit-btn{
+    display: block;
+    margin: 0 auto;
+}
+
+.project-card{
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color:rgb(87, 182, 255);
+    margin-bottom: 20px;
+}
+
+.project-card-description{
+    width: 40%;
+    height: 100%;
+}
+
+.project-card img{
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.projects-links{
+    font-size: 14px;
+    color:rgb(0, 30, 255);
+}
+
+.project-card-description h2{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+
+.project-card-description p, .project-card-description div{
+    margin-top: 10px;
+    margin-bottom: 0
+}
+
+
+.project-card-description a:hover{
+    border-bottom: 1px solid rgb(0, 30, 255);
+}
+
+.project-img{
+    width: 25vw;
+    height: 30vh;
+    display: block;
+    margin: 10px auto 30px auto;
+    border-radius: 20px;
+}
+
+.project-description{
+    width: 32vw;
+    margin: 0 auto;
+}
+
+.project-description h2{
+    margin: 0;
+}
+
+
+
+
+

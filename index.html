@@ -2,10 +2,278 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Timac Wang's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./resources/resume.png" type="image/png"> <!-- By nawicon --> 
   </head>
   <body>
-    <h1>Hello World</h1>
-    <h2>I love pizza</h2>
+    <div>
+      <header>
+      <nav>
+        <button class="navbar-btn selected" id="home-btn">
+          <span class="material-icons-outlined">
+            home
+          </span>
+          <span>Home</span>
+        </button>
+        <button class="navbar-btn" id="about-btn">
+          <span class="material-icons-outlined">
+            account_circle
+          </span>
+          <span>About</span>
+        </button>
+        <button class="navbar-btn" id="projects-btn">
+          <span class="material-icons-outlined">
+            explore
+          </span> 
+          <span>Projects</span>
+        </button>
+        <button class="navbar-btn" id="contact-btn">
+          <span class="material-icons-outlined">
+            mail
+          </span>
+          <span>Contact</span>
+        </button>
+      </nav>
+      </header>
+      <main>
+      <section id="home">
+        <h1 id="welcome-msg">Welcome!</h1>
+        <div id="intro-container">
+          <div id="image-container">
+            <img src="./resources/selfie.jpg">
+          </div>
+          <div id="brief-intro">
+            <h2>
+              Web Dev Enthusiast, <br>
+              Creative Coder, <br>
+              and Student
+            </h2>
+            <p>
+              Hello! I am Timac. I'm a student who enjoys web development and has a passion about clean code, 
+              concise comments and creative problem solving.
+            </p>
+            <div id="button-container">
+              <button class="home-page-btn" id="work-with-me">Work With Me</button>
+              <button class="home-page-btn" id="see-my-work">See My Work</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="hidden">
+        <div id="name-image-container">
+            <h1>Timac Wang</h1>
+
+            <div id="id-photo-container">
+              <img src="./resources/id-photo.jpg">
+            </div>
+        </div>
+        <div id="about-btns-container">
+          <button class="about-btn" id="about-github-btn">
+            <i class="fa fa-github icon">
+              <span>Github</span>
+            </i>
+          </button>
+          <button class="about-btn" id="about-linkedin-btn">
+            <i class="fa fa-linkedin-square icon">
+              <span>LinkedIn</span>
+            </i>
+          </button>
+          <button class="about-btn" id="about-email-btn">
+            <i class="fa fa-envelope icon">
+              <span>Email</span>
+            </i>
+          </button>
+        </div>
+        <div id="introduction">
+          <p>I'm a developer and an undergraduate student studying Computer Science at the University of Waterloo.</p>
+          <p>I'm a passionate programmer with a focus on building clean, efficient, and user-friendly software. I love coding and am always looking 
+            for opportunities to sharpen my skills and explore new technologies. Whether I'm designing responsive websites, developing mini video games,
+            or creating tools to simplify everyday tasks, I'm driven by curiosity and a genuine love of learning. My goal is to write code that not only
+            functions — but makes a meaningful impact.
+          </p>
+        </div>
+        <div id="work-experiences-container">
+          <h3>Work Experience</h3>
+          <div class="work-experience">
+            <div>
+              <div class="work-experience-title">
+                Software Developer Intern - Kingdee Software
+              </div>
+              <div class="work-experience-date">
+                Sep 2024 - Dec 2024
+              </div>
+            </div>
+            <ul>
+              <li>
+                Designed and wrote unit and integration testing cases for the multilingual version of the PLM module.
+              </li>
+              <li>
+                Used Java to write test scripts and increased the automation scripts coverage from 16.9% to 20.1%.
+              </li>
+              <li>
+                Utilized the Mockito framework to isolate the target testing code from its dependencies when per-
+                forming unit testing and improved the average code testing coverage from 40% to 70%.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="hidden">
+        <div class="title-container">
+          <h1>Projects</h1>
+        </div>
+        <div class="project-card">
+          <img src="./resources/flappy-bird1.png">
+          <div class="project-card-description">
+            <h2>Flappy Bird</h2>
+            <p>
+              Developed the classic Flappy Bird game using Java. The player controls the bird,
+              navigating it through gaps between vertically placed pipes by clicking the mouse to flap upward. 
+            </p>
+            <div>
+              <a class="projects-links" href="#" id="flappy-bird-project-link">Read Case Study ></a>
+            </div>
+            
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./resources/cc3k.png">
+          <div class="project-card-description">
+            <h2>Chamber Crawler 3000</h2>
+            <p>Collaborated with a peer and designed a text-based dungeon crawler game written in C++. Players navigate
+              through randomly generated chambers, battle diverse monsters, and collect items to progress. </p>
+            <div>
+              <a class="projects-links" href="#" id="cc3k-project-link">Read Case Study ></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./resources/pokemon.png">
+          <div class="project-card-description">
+            <h2>Pokémon Runner</h2>
+            <p>Inspired by the Google T-Rex game, Pokémon Runner is an action-packed 2D runner game developed in Python, 
+              featuring a player-controlled Pokemon character navigating through obstacles and collecting items to score points. </p>
+            <div>
+              <a class="projects-links" href="#" id="pokemon-runner-project-link">Read Case Study ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="hidden">
+        <div class="title-container">
+          <h1>Contact</h1>
+        </div>
+        <div id="email-container">
+          <form action="https://formsubmit.co/t76wang@uwaterloo.ca" method="POST">
+            <div id="name-email-container">
+              <div>
+                <label>
+                  Name: <br>
+                  <input type="text" name="name" required placeholder="Your Name">
+                </label>
+              </div>
+              <div>
+                <label>
+                  Email: <br>
+                  <input type="email" name="email" required placeholder="Your Email">
+                </label>
+              </div>
+            </div>
+            <div id="message-container">
+              <label>
+              Message: <br>
+              <textarea name="message" required placeholder="Your Message"></textarea>
+              </label>
+            </div>
+            <br>
+            <button type="submit" id="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <section id="flappy-bird-project" class="hidden">
+        <div class="project-btn-container">
+          <button class="project-btn">
+            &lt; Projects
+          </button>
+        </div>
+        <div class="project-title-container">
+          <h1>Flappy Bird</h1>
+        </div>
+        <img class="project-img" src="./resources/flappy-bird1.png">
+        <div class="project-description">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Built with Java Swing to create a interactive GUI resembling the original Flappy Bird game. Applied Object-Oriented Programming
+              principles for clean class structure and encapsulated logic.</li>
+            <li>Controlled game flow using Timer objects which enables smooth animations. Utilized anonymous inner classes 
+              to efficiently override methods in MouseAdapter for custom event handling with JButtons.</li>
+            <li>Locally storing highest scores using the FileWriter and BufferedReader classes to a local file.</li>
+            <li>Designed game logic for gravity, collision detection, and scoring mechanisms based on pipe gaps and bird movement.</li>
+          </ul>
+        </div>
+        <button class="project-github-btn" id="flappy-bird-github-btn">View on Github</button>
+      </section>
+      <section id="cc3k-project" class="hidden">
+        <div class="project-btn-container">
+          <button class="project-btn">
+            &lt; Projects
+          </button>
+        </div>
+        <div class="project-title-container">
+          <h1>CC3K</h1>
+        </div>
+        <img class="project-img" src="./resources/cc3k.png">
+        <div class="project-description">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Built with C++ using standard I/O to simulate a roguelike dungeon crawler game in the terminal. </li>
+            <li>Applied OOP principles with a well-structured class hierarchy for clean separation of concerns.</li>
+            <li>Implemented polymorphism through abstract base classes (e.g., Character, Enemy) and virtual functions to support different races
+                for player with unique passive abilities (e.g., Troll healing on movement).</li>
+            <li>Encapsulated game logic for map generation, movement, combat, item usage, and enemy AI within dedicated modules to promote modular design and extensibility.</li>
+            
+          </ul>
+        </div>
+        <button class="project-github-btn" id="cc3k-github-btn">View on Github</button>
+      </section>
+      <section id="pokemon-runner-project" class="hidden">
+        <div class="project-btn-container">
+          <button class="project-btn">
+            &lt; Projects
+          </button>
+        </div>
+        <div class="project-title-container">
+          <h1>Pokémon Runner</h1>
+        </div>
+        <img class="project-img" src="./resources/pokemon.png">
+        <div class="project-description">
+          <h2>Key Features</h2>
+          <ul>
+            <li>Developed a 2D side-scrolling runner game in Python using the Pygame library, inspired by the Chrome T-Rex game.
+                Included image sprites for player and enemies and background layers to simulate motion.</li>
+            <li>Controlled animation timing and game updates with a Pygame clock to ensure consistent frame rates and fluid gameplay.
+                Integrated keyboard event handling for responsive controls.</li>
+            <li>Handled collision detection by leveraging Pygame's Rect objects to perform continuous bounding box intersection checks 
+                between the player and obstacles.</li>
+          </ul>
+        </div>
+        <button class="project-github-btn" id="pokemon-runner-github-btn">View on Github</button>
+      </section>
+      </main>
+    </div>
+    <footer>
+      <div id="copyright-container">
+        <p>&#169 2025 | All rights reserved</p>
+      </div>
+      <div id="icon-container">
+        <button class="footer-btn" id="footer-github-btn"><i class="fa fa-github icon"></i></button>
+        <button class="footer-btn" id="footer-linkedin-btn"><i class="fa fa-linkedin-square icon"></i></button>
+        <button class="footer-btn" id="footer-email-btn"><i class="fa fa-envelope icon"></i></button>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
