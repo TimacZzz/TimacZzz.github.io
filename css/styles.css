@@ -23,7 +23,7 @@ nav{
     justify-content: space-evenly;
     border-radius: 20px;
     background-color: white;
-    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-family: 'Comic Relief', system-ui, Arial, sans-serif;
     font-size: 1.2rem
 }
 
@@ -135,7 +135,7 @@ nav{
     }
 
     #name-image-container h1, #work-experiences-container h3{
-        font-size: 2rem !important;
+        font-size: 2.5rem !important;
     }
 
     .section-width{
@@ -166,7 +166,7 @@ nav{
 
 body{
     background-color: rgb(167, 214, 250);
-    font-family: 'Comic Sans MS', cursive, 'Arial', sans-serif;
+    font-family: 'Comic Relief', system-ui, 'Arial', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -241,7 +241,7 @@ button:hover, #submit-btn:hover{
     border-radius: 30px;
     width: 180px;
     background-color: white;
-    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-family: 'Comic Relief', system-ui, Arial, sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
@@ -317,7 +317,7 @@ a{
 }
 
 .project-btn, .project-github-btn{
-    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-family: 'Comic Relief', system-ui, Arial, sans-serif;
     font-size: 1rem;
     
 }
@@ -333,7 +333,7 @@ a{
 }
 
 .about-btn i span{
-    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-family: 'Comic Relief', system-ui, Arial, sans-serif;
     font-size: 1rem;
 }
 
@@ -384,7 +384,7 @@ input, textarea{
     margin: 5px auto;
     padding: 10px;
     font-size: 1rem;
-    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-family: 'Comic Relief', system-ui, Arial, sans-serif;
     border: 2px solid black;
     border-radius: 8px;
     outline: none;
