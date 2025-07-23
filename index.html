@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timac Wang's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
@@ -41,7 +42,7 @@
       <main>
       <section id="home">
         <h1 id="welcome-msg">Welcome!</h1>
-        <div id="intro-container">
+        <div id="intro-container" class="fade-in">
           <div id="image-container">
             <img src="./resources/selfie.jpg">
           </div>
@@ -63,14 +64,13 @@
         </div>
       </section>
       <section id="about" class="hidden">
-        <div id="name-image-container">
+        <div id="name-image-container" class="section-width">
             <h1>Timac Wang</h1>
-
             <div id="id-photo-container">
               <img src="./resources/id-photo.jpg">
             </div>
         </div>
-        <div id="about-btns-container">
+        <div id="about-btns-container" class="section-width margin-five-auto">
           <button class="about-btn" id="about-github-btn">
             <i class="fa fa-github icon">
               <span>Github</span>
@@ -87,7 +87,7 @@
             </i>
           </button>
         </div>
-        <div id="introduction">
+        <div id="introduction" class="section-width margin-five-auto">
           <p>I'm a developer and an undergraduate student studying Computer Science at the University of Waterloo.</p>
           <p>I'm a passionate programmer with a focus on building clean, efficient, and user-friendly software. I love coding and am always looking 
             for opportunities to sharpen my skills and explore new technologies. Whether I'm designing responsive websites, developing mini video games,
@@ -95,7 +95,7 @@
             functions — but makes a meaningful impact.
           </p>
         </div>
-        <div id="work-experiences-container">
+        <div id="work-experiences-container" class="section-width margin-five-auto">
           <h3>Work Experience</h3>
           <div class="work-experience">
             <div>
@@ -122,12 +122,12 @@
         </div>
       </section>
       <section id="projects" class="hidden">
-        <div class="title-container">
+        <div class="title-container section-width">
           <h1>Projects</h1>
         </div>
-        <div class="project-card">
-          <img src="./resources/flappy-bird1.png">
-          <div class="project-card-description">
+        <div class="project-card section-width margin-five-auto">
+          <img src="./resources/flappy-bird1.png" class="fade-in">
+          <div class="project-card-description fade-in">
             <h2>Flappy Bird</h2>
             <p>
               Developed the classic Flappy Bird game using Java. The player controls the bird,
@@ -139,9 +139,9 @@
             
           </div>
         </div>
-        <div class="project-card">
-          <img src="./resources/cc3k.png">
-          <div class="project-card-description">
+        <div class="project-card section-width margin-five-auto">
+          <img src="./resources/cc3k.png" class="fade-in">
+          <div class="project-card-description fade-in">
             <h2>Chamber Crawler 3000</h2>
             <p>Collaborated with a peer and designed a text-based dungeon crawler game written in C++. Players navigate
               through randomly generated chambers, battle diverse monsters, and collect items to progress. </p>
@@ -150,9 +150,9 @@
             </div>
           </div>
         </div>
-        <div class="project-card">
-          <img src="./resources/pokemon.png">
-          <div class="project-card-description">
+        <div class="project-card section-width margin-five-auto">
+          <img src="./resources/pokemon.png" class="fade-in">
+          <div class="project-card-description fade-in">
             <h2>Pokémon Runner</h2>
             <p>Inspired by the Google T-Rex game, Pokémon Runner is an action-packed 2D runner game developed in Python, 
               featuring a player-controlled Pokemon character navigating through obstacles and collecting items to score points. </p>
@@ -163,10 +163,10 @@
         </div>
       </section>
       <section id="contact" class="hidden">
-        <div class="title-container">
+        <div class="title-container section-width margin-five-auto">
           <h1>Contact</h1>
         </div>
-        <div id="email-container">
+        <div id="email-container" class="section-width margin-five-auto">
           <form action="https://formsubmit.co/t76wang@uwaterloo.ca" method="POST">
             <div id="name-email-container">
               <div>
@@ -194,16 +194,16 @@
         </div>
       </section>
       <section id="flappy-bird-project" class="hidden">
-        <div class="project-btn-container">
+        <div class="project-btn-container section-width">
           <button class="project-btn">
             &lt; Projects
           </button>
         </div>
-        <div class="project-title-container">
+        <div class="project-title-container section-width">
           <h1>Flappy Bird</h1>
         </div>
-        <img class="project-img" src="./resources/flappy-bird1.png">
-        <div class="project-description">
+        <img class="project-img section-width" src="./resources/flappy-bird1.png">
+        <div class="project-description section-width">
           <h2>Key Features</h2>
           <ul>
             <li>Built with Java Swing to create a interactive GUI resembling the original Flappy Bird game. Applied Object-Oriented Programming
@@ -217,16 +217,16 @@
         <button class="project-github-btn" id="flappy-bird-github-btn">View on Github</button>
       </section>
       <section id="cc3k-project" class="hidden">
-        <div class="project-btn-container">
+        <div class="project-btn-container section-width">
           <button class="project-btn">
             &lt; Projects
           </button>
         </div>
-        <div class="project-title-container">
+        <div class="project-title-container section-width">
           <h1>CC3K</h1>
         </div>
-        <img class="project-img" src="./resources/cc3k.png">
-        <div class="project-description">
+        <img class="project-img section-width" src="./resources/cc3k.png">
+        <div class="project-description section-width">
           <h2>Key Features</h2>
           <ul>
             <li>Built with C++ using standard I/O to simulate a roguelike dungeon crawler game in the terminal. </li>
@@ -240,16 +240,16 @@
         <button class="project-github-btn" id="cc3k-github-btn">View on Github</button>
       </section>
       <section id="pokemon-runner-project" class="hidden">
-        <div class="project-btn-container">
+        <div class="project-btn-container section-width">
           <button class="project-btn">
             &lt; Projects
           </button>
         </div>
-        <div class="project-title-container">
+        <div class="project-title-container section-width">
           <h1>Pokémon Runner</h1>
         </div>
-        <img class="project-img" src="./resources/pokemon.png">
-        <div class="project-description">
+        <img class="project-img section-width" src="./resources/pokemon.png">
+        <div class="project-description section-width">
           <h2>Key Features</h2>
           <ul>
             <li>Developed a 2D side-scrolling runner game in Python using the Pygame library, inspired by the Chrome T-Rex game.

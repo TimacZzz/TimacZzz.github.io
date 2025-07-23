@@ -2,11 +2,6 @@
     border: 1px solid black;
 } */
 
-button:hover, #submit-btn:hover{
-    background-color: rgba(87, 182, 255, 0.4);
-    cursor: pointer;
-}
-
 nav{
     position: fixed;
     top: 3%;
@@ -14,20 +9,21 @@ nav{
     transform: translateX(-50%); 
     display: flex;
     gap: 5px;
-    border-radius: 20px;
     border: 3px solid black;
+    border-radius: 20px;
     width: fit-content;
     padding: 3px;
+    z-index: 1000;
 }
 
 .navbar-btn{
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
-    width: fit-content;
     background-color: white;
-    font-family: cursive, Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
     font-size: 1.2rem
 }
 
@@ -46,9 +42,131 @@ nav{
     font-style: normal;
 }
 
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Desktop Large */
+@media screen and (max-width: 1440px) {
+    .section-width{
+        width: 60vw !important;
+    }
+
+    .project-card{
+        height: 30vh !important;
+    }
+
+    .project-btn-container{
+        margin: 8% auto 0 auto !important;
+    }
+
+    #name-image-container{
+        margin: 5% auto 0 auto !important;
+    }
+
+    .project-img{
+        width: 50vw !important;
+        height: 40vh !important;
+    }
+
+}
+
+/* Desktop Small */
+@media screen and (max-width: 1024px) {
+    #name-image-container h1{
+        font-size: 4rem !important;
+    }
+
+    #name-image-container{
+        margin: 8% auto 0 auto !important;
+    }
+
+    .title-container{
+        margin: 5% auto 0 auto !important;
+    }
+
+    .project-btn-container{
+        margin: 10% auto 0 auto !important;
+    }
+
+    .project-card-description{
+        font-size: 14px !important;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    #id-photo-container{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .title-container{
+        margin: 7% auto 0 auto !important;
+    }
+
+    #name-image-container h1{
+        font-size: 3rem !important;
+    }
+
+    .project-card-description{
+        font-size: 12px !important;
+    }
+
+    .project-card{
+        height: 25vh !important;
+    }
+
+    .project-btn-container{
+        margin: 12% auto 0 auto !important;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 425px) {
+    #id-photo-container{
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    #name-image-container h1, #work-experiences-container h3{
+        font-size: 2rem !important;
+    }
+
+    .section-width{
+        width: 80vw !important;
+    }
+
+    .project-card-description{
+        font-size: 9px !important;
+    }
+
+    .project-card{
+        height: 20vh !important;
+    }
+
+    .project-btn-container{
+        margin: 20% auto 0 auto !important;
+    }
+
+    .title-container{
+        margin: 11% auto 0 auto !important;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
 body{
     background-color: rgb(167, 214, 250);
-    font-family: cursive;
+    font-family: 'Comic Sans MS', cursive, 'Arial', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -66,7 +184,7 @@ body{
 
 #intro-container{
     display: flex;
-    justify-content: center;    /* center horizontally */
+    justify-content: center;
     gap: 2rem;
     width: 45vw;
     margin: 0 auto;  
@@ -106,36 +224,39 @@ body{
     border-radius: 8px;
 }
 
-.home-page-btn, #submit-btn{
-    border-radius: 30px;
-    width: 180px;
-    background-color: white;
-    font-family: cursive, Arial, sans-serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px;
-}
-
-
-
-#icon-container{
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    width: 5vw;
-}
-
-i{
-    margin: 5px;
-    font-size: 24px !important;
-}
-
 footer{
     width: 41vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+button:hover, #submit-btn:hover{
+    background-color: rgba(87, 182, 255, 0.4);
+    cursor: pointer;
+}
+
+.home-page-btn, #submit-btn{
+    border-radius: 30px;
+    width: 180px;
+    background-color: white;
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#icon-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 13%;
+}
+
+i{
+    margin: 5px;
+    font-size: 1.5rem !important;
 }
 
 #name-image-container{
@@ -146,11 +267,11 @@ footer{
     height: 160px;
 }
 
-#name-image-container, #about-btns-container, #introduction, #work-experiences-container, .work-experience, #email-container, .title-container, .project-card{
+.section-width{
     width: 32vw;
 }
 
-#about-btns-container, #introduction, #work-experiences-container, .work-experience, #email-container, .title-container, .project-card{
+.margin-five-auto{
     margin: 5px auto;
 }
 
@@ -196,7 +317,7 @@ a{
 }
 
 .project-btn, .project-github-btn{
-    font-family: cursive, Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
     font-size: 1rem;
     
 }
@@ -212,12 +333,12 @@ a{
 }
 
 .about-btn i span{
-    font-family: cursive, Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
     font-size: 1rem;
 }
 
 .about-btn i{
-    font-size: 18px !important;
+    font-size: 1.125rem !important;
 }
 
 #about-btns-container{
@@ -262,8 +383,8 @@ input, textarea{
     width: 100%;
     margin: 5px auto;
     padding: 10px;
-    font-size: 16px;
-    font-family: cursive;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS', cursive, Arial, sans-serif;
     border: 2px solid black;
     border-radius: 8px;
     outline: none;
@@ -291,7 +412,6 @@ ul{
 
 .project-title-container{
     margin: 0 auto;
-    width: 32vw;
 }
 
 
@@ -326,7 +446,7 @@ ul{
 }
 
 .projects-links{
-    font-size: 14px;
+    font-size: 0.875rem;
     color:rgb(0, 30, 255);
 }
 
@@ -335,13 +455,10 @@ ul{
     margin-bottom: 0;
 }
 
-
-
 .project-card-description p, .project-card-description div{
     margin-top: 10px;
     margin-bottom: 0
 }
-
 
 .project-card-description a:hover{
     border-bottom: 1px solid rgb(0, 30, 255);
@@ -356,15 +473,9 @@ ul{
 }
 
 .project-description{
-    width: 32vw;
     margin: 0 auto;
 }
 
 .project-description h2{
     margin: 0;
 }
-
-
-
-
-
